@@ -1,0 +1,103 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: lightgray;
+}
+
+/* Structure */
+#content {
+    background: none;
+    padding: 5px;
+    width: 80%;
+    margin: auto; /* center horizontally */
+    border-radius: 5px;
+}
+
+#main-content {
+    background: #A0D3D9;
+}
+
+#main-content ul {
+    padding-left: 0;
+}
+
+#main-content li {
+    list-style-type: none;
+}
+
+#main-content a {
+    color: #3D7373
+}
+
+
+/* Main Navigation */
+
+#main-nav ul {
+    padding-left: 0;
+}
+
+#main-nav li {
+    list-style-type: none; /* Removes bullet */
+    background: #8ABABF;
+    padding: 5px;
+    border-right: 1px solid black;
+}
+
+#main-nav a {
+    text-decoration: none;
+    color: white;
+}
+
+#main-footer {
+    text-align: center;
+}
+
+.one {
+    background: white;
+    padding: 1px;
+    margin: 1px;
+}
+
+.four {
+    background: white;
+    padding: 1px;
+    margin: 1px;
+}
+
+
+/* Typography */
+
+h1 {
+    color: black;
+    text-align: center;
+}
+
+/* For larger res */
+
+@media only screen and (min-width: 768px) {
+    .columns {
+        display: flex;
+    }
+    .columns section {
+        padding: 5px 20px;
+    }
+    .one,
+    #main-nav li {
+        flex: 1;
+    }
+    .two {
+        flex: 2;
+    }
+    .three {
+        flex: 3;
+    }
+    .four {
+        flex: 4;
+    }
+    #main-content {
+        border: 1px solid #3D7373;
+    }
+    #main-nav li {
+        text-align: center;
+        border: 1px solid #3D7373;
+    }
+}
